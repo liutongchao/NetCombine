@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "git@github.com:Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "eaf6e622dd41b07b251d8f01752eab31bc811493",
+          "version": "5.4.1"
+        }
+      },
+      {
+        "package": "HandyJSON",
+        "repositoryURL": "git@github.com:alibaba/HandyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "dcf39cf062680ffa4fd0acb7f9117a97755c113f",
+          "version": "5.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

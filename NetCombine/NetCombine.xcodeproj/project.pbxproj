@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5727A6BA2604B7DE009E49C2 /* Modifier+Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727A6B52604B7DE009E49C2 /* Modifier+Refreshable.swift */; };
+		5727A6BB2604B7DE009E49C2 /* Request+Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727A6B72604B7DE009E49C2 /* Request+Activity.swift */; };
+		5727A6BC2604B7DE009E49C2 /* Request+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727A6B92604B7DE009E49C2 /* Request+Alamofire.swift */; };
+		575598332601E354000D5325 /* NetCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575598322601E354000D5325 /* NetCombineApp.swift */; };
+		575598352601E354000D5325 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575598342601E354000D5325 /* ContentView.swift */; };
+		575598372601E359000D5325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575598362601E359000D5325 /* Assets.xcassets */; };
+		5755983A2601E359000D5325 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575598392601E359000D5325 /* Preview Assets.xcassets */; };
+		575598442601F287000D5325 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 575598432601F287000D5325 /* Alamofire */; };
+		575598482601F368000D5325 /* HandyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 575598472601F368000D5325 /* HandyJSON */; };
+		5756A60C26031F8E00E693FE /* TradeNewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756A60B26031F8E00E693FE /* TradeNewsApi.swift */; };
+		5756A61326034CAA00E693FE /* TradeNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756A61226034CAA00E693FE /* TradeNewsViewModel.swift */; };
+		57B3D0042604A079007327AB /* ScanLoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B3D0032604A079007327AB /* ScanLoginApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5727A6B52604B7DE009E49C2 /* Modifier+Refreshable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Modifier+Refreshable.swift"; sourceTree = "<group>"; };
+		5727A6B72604B7DE009E49C2 /* Request+Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+Activity.swift"; sourceTree = "<group>"; };
+		5727A6B92604B7DE009E49C2 /* Request+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+Alamofire.swift"; sourceTree = "<group>"; };
+		5755982F2601E354000D5325 /* NetCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		575598322601E354000D5325 /* NetCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetCombineApp.swift; sourceTree = "<group>"; };
+		575598342601E354000D5325 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		575598362601E359000D5325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		575598392601E359000D5325 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5755983B2601E359000D5325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5756A60B26031F8E00E693FE /* TradeNewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeNewsApi.swift; sourceTree = "<group>"; };
+		5756A61226034CAA00E693FE /* TradeNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeNewsViewModel.swift; sourceTree = "<group>"; };
+		57B3D0032604A079007327AB /* ScanLoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLoginApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5755982C2601E354000D5325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575598442601F287000D5325 /* Alamofire in Frameworks */,
+				575598482601F368000D5325 /* HandyJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5727A6B32604B7DE009E49C2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5727A6B42604B7DE009E49C2 /* Refresh */,
+				5727A6B62604B7DE009E49C2 /* RequestActivity */,
+				5727A6B82604B7DE009E49C2 /* Request */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		5727A6B42604B7DE009E49C2 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				5727A6B52604B7DE009E49C2 /* Modifier+Refreshable.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		5727A6B62604B7DE009E49C2 /* RequestActivity */ = {
+			isa = PBXGroup;
+			children = (
+				5727A6B72604B7DE009E49C2 /* Request+Activity.swift */,
+			);
+			path = RequestActivity;
+			sourceTree = "<group>";
+		};
+		5727A6B82604B7DE009E49C2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5727A6B92604B7DE009E49C2 /* Request+Alamofire.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		575598262601E353000D5325 = {
+			isa = PBXGroup;
+			children = (
+				575598312601E354000D5325 /* NetCombine */,
+				575598302601E354000D5325 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575598302601E354000D5325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5755982F2601E354000D5325 /* NetCombine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575598312601E354000D5325 /* NetCombine */ = {
+			isa = PBXGroup;
+			children = (
+				5727A6B32604B7DE009E49C2 /* Vendor */,
+				575598322601E354000D5325 /* NetCombineApp.swift */,
+				575598342601E354000D5325 /* ContentView.swift */,
+				57B3D0032604A079007327AB /* ScanLoginApi.swift */,
+				5756A60B26031F8E00E693FE /* TradeNewsApi.swift */,
+				5756A61226034CAA00E693FE /* TradeNewsViewModel.swift */,
+				575598362601E359000D5325 /* Assets.xcassets */,
+				5755983B2601E359000D5325 /* Info.plist */,
+				575598382601E359000D5325 /* Preview Content */,
+			);
+			path = NetCombine;
+			sourceTree = "<group>";
+		};
+		575598382601E359000D5325 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				575598392601E359000D5325 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5755982E2601E354000D5325 /* NetCombine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5755983E2601E359000D5325 /* Build configuration list for PBXNativeTarget "NetCombine" */;
+			buildPhases = (
+				5755982B2601E354000D5325 /* Sources */,
+				5755982C2601E354000D5325 /* Frameworks */,
+				5755982D2601E354000D5325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetCombine;
+			packageProductDependencies = (
+				575598432601F287000D5325 /* Alamofire */,
+				575598472601F368000D5325 /* HandyJSON */,
+			);
+			productName = NetCombine;
+			productReference = 5755982F2601E354000D5325 /* NetCombine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		575598272601E353000D5325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					5755982E2601E354000D5325 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 5755982A2601E353000D5325 /* Build configuration list for PBXProject "NetCombine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 575598262601E353000D5325;
+			packageReferences = (
+				575598422601F286000D5325 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				575598462601F368000D5325 /* XCRemoteSwiftPackageReference "HandyJSON" */,
+			);
+			productRefGroup = 575598302601E354000D5325 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5755982E2601E354000D5325 /* NetCombine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5755982D2601E354000D5325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5755983A2601E359000D5325 /* Preview Assets.xcassets in Resources */,
+				575598372601E359000D5325 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5755982B2601E354000D5325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57B3D0042604A079007327AB /* ScanLoginApi.swift in Sources */,
+				575598352601E354000D5325 /* ContentView.swift in Sources */,
+				5727A6BA2604B7DE009E49C2 /* Modifier+Refreshable.swift in Sources */,
+				5756A60C26031F8E00E693FE /* TradeNewsApi.swift in Sources */,
+				575598332601E354000D5325 /* NetCombineApp.swift in Sources */,
+				5756A61326034CAA00E693FE /* TradeNewsViewModel.swift in Sources */,
+				5727A6BC2604B7DE009E49C2 /* Request+Alamofire.swift in Sources */,
+				5727A6BB2604B7DE009E49C2 /* Request+Activity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5755983C2601E359000D5325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5755983D2601E359000D5325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5755983F2601E359000D5325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NetCombine/Preview Content\"";
+				DEVELOPMENT_TEAM = LZBY3S98DG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NetCombine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = West.NetCombine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		575598402601E359000D5325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NetCombine/Preview Content\"";
+				DEVELOPMENT_TEAM = LZBY3S98DG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NetCombine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = West.NetCombine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5755982A2601E353000D5325 /* Build configuration list for PBXProject "NetCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5755983C2601E359000D5325 /* Debug */,
+				5755983D2601E359000D5325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5755983E2601E359000D5325 /* Build configuration list for PBXNativeTarget "NetCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5755983F2601E359000D5325 /* Debug */,
+				575598402601E359000D5325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		575598422601F286000D5325 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		575598462601F368000D5325 /* XCRemoteSwiftPackageReference "HandyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:alibaba/HandyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		575598432601F287000D5325 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 575598422601F286000D5325 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		575598472601F368000D5325 /* HandyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 575598462601F368000D5325 /* XCRemoteSwiftPackageReference "HandyJSON" */;
+			productName = HandyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 575598272601E353000D5325 /* Project object */;
+}
